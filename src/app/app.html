@@ -1,1 +1,15 @@
 <ion-nav [root]="rootPage"></ion-nav>
+
+<h1 *ngIf="authService.user | async">Welcome {{(authService.user | async)?.email}}!</h1>
+
+<div *ngIf="!(authSerice.user | async)">
+    <input type="text" [(ngModel)="email" placeholder="email">
+    <input type="text" [(ngModel)="password" placeholder="password">
+
+    <button (click)="signup()" [disabled]="!email || !password">Sign Up!</button>
+    <button (click)="login()" [disabled]="!email || !password">Log In</button>
+    <button (click)="logout()" *ngIf="authService.user | async">Log Out</button>
+
+
+
+</div>
