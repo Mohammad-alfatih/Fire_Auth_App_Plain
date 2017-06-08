@@ -5,7 +5,7 @@ export const environment = {
     authDomain: 'fireauthappplain.firebaseapp.com',
     databaseURL: 'https://fireauthappplain.firebaseio.com/',
     projectId: 'fireauthappplain',
-    storageBucket: 'XXXXXXXXXXX',
-    messagingSenderId: 'XXXXXXXXXXX'
+    storageBucket: 'fireauthappplain.appspot.com',
+    messagingSenderId: '551522304457'
   }
 };

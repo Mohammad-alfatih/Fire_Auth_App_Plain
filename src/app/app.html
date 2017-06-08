@@ -10,6 +10,4 @@
     <button (click)="login()" [disabled]="!email || !password">Log In</button>
     <button (click)="logout()" *ngIf="authService.user | async">Log Out</button>
 
-
-
 </div>
